@@ -948,6 +948,144 @@ body.solo #exitHot{display:block}
 .badgesheet .bani{width:40mm;height:40mm;display:block}
 .badgesheet .bin span{font-family:var(--f-display);font-weight:800;font-size:15pt;color:#4b4170}
 
+/* ---------- v2.3 ---------- */
+/* setup: members are toggles (present / absent today) */
+.setup .pl.member.tog{cursor:pointer}
+.setup .pl.member.tog:active{transform:translateY(3px)}
+.setup .pl.member.away small{color:#b0402c;font-weight:800}
+.setup .rpanel .players.many{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.setup .players.many .pl.member{min-height:52px;padding:4px 6px;gap:4px}
+.setup .players.many .pl.member svg{width:36px;height:36px}
+.setup .players.many .pl.member .nm{font-size:14px}
+.setup .players.many .pl.member small{font-size:11px}
+.setup .thead h3{display:flex;align-items:center;gap:8px;white-space:nowrap;font-size:17px}
+.setup .thead .sbtn2{white-space:nowrap;font-size:13px;height:38px;padding:0 12px}
+.mcount{white-space:nowrap;font-family:var(--f-body,inherit);font-size:13px;font-weight:800;color:#23803c;background:#e3f4e2;padding:3px 10px;border-radius:var(--R)}
+.mcount.zero{color:#b0402c;background:#ffe0d6}
+.mhint{margin:-4px 0 0;font-size:12.5px;font-weight:700;color:var(--muted)}
+.mhint.err{color:#b0402c}
+
+/* station bubble: question + small second line */
+.ui2 .b2t{display:flex;flex-direction:column;gap:6px}
+.ui2 .b2t small{font-family:var(--f-display);font-weight:800;font-size:19px;line-height:1.3;color:#8a7cc0}
+
+/* after the meal: "where was it different?" (one child) */
+.whyz{position:absolute;left:0;right:0;top:250px;display:flex;justify-content:center;align-items:center;gap:26px;z-index:10}
+.whyz>svg{width:150px;height:150px;flex:none;animation:bob 2s ease-in-out infinite}
+.whyc{display:flex;align-items:center;gap:18px;background:#fff;border-radius:var(--R);padding:18px 22px;box-shadow:0 8px 20px rgba(120,90,60,.12)}
+.whyart svg{width:96px;height:96px}
+.whymemo{display:flex;flex-direction:column;gap:6px;width:400px}
+.whymemo b{font-size:14px;color:var(--muted)}
+.whymemo .fin{font-size:17px}
+
+/* after the meal: everyone talks (group) */
+.talkz{position:absolute;left:40px;right:40px;top:96px;bottom:120px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:30px;z-index:10}
+.talkz .tq{display:flex;align-items:center;gap:12px;width:820px}
+.talkz .pipi{width:130px;height:130px;flex:none;transform:scaleX(-1)}
+.talkz .tbub{position:relative;flex:1;min-height:120px;padding:20px 70px 20px 28px;border-radius:var(--R);background:#fff;box-shadow:0 8px 20px rgba(120,90,60,.12);display:flex;flex-direction:column;justify-content:center;gap:8px}
+.talkz .tbub b{font-family:var(--f-display);font-weight:800;font-size:30px;line-height:1.35;color:#3f3566}
+.talkz .tbub small{font-family:var(--f-display);font-weight:800;font-size:21px;color:#8a7cc0}
+.talkz .say3{position:absolute;right:14px;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:50%;border:none;background:#a58bff;color:#fff;display:grid;place-items:center;cursor:pointer}
+.talkz .say3 svg{width:24px;height:24px}
+.tkids{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:880px}
+.tk{display:flex;flex-direction:column;align-items:center;gap:2px;animation:bob 2.4s ease-in-out infinite}
+.tk:nth-child(2n){animation-delay:.4s}.tk:nth-child(3n){animation-delay:.8s}
+.tk svg{width:104px;height:104px}
+.tk i{font-style:normal;font-weight:800;font-size:15px;color:#6b5a3c}
+.ttip{margin:6px 0 0;max-width:760px;font-size:14px;font-weight:700;color:var(--muted);background:rgba(255,255,255,.75);padding:8px 14px;border-radius:var(--R)}
+.ttip b{color:#8a7cc0;margin-right:8px}
+
+/* album quiz: no correct-answer glow on a miss */
+.opt.qz.mine{opacity:1;outline:5px dashed #c9b8ec;outline-offset:4px}
+.br .btn2.qzb{height:70px;padding:0 26px;font-size:20px;margin-right:14px}
+.qpeek .mcard{width:520px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.qpeek .aday{width:300px;padding:18px 14px}
+.qpeek .aday svg{width:150px;height:166px}
+.qpeek .mrow{justify-content:center}
+
+/* adult record: one child at a time, calm adult style */
+.adm .page.recp{display:flex;flex-direction:column;gap:12px}
+.rphead{display:flex;align-items:center;gap:10px;flex:none}
+.rphead>svg{width:44px;height:44px;flex:none}
+.rphead>b{font-family:var(--f-display);font-size:20px;color:var(--ink)}
+.rpnote{display:flex;align-items:center;gap:6px;max-width:520px;font-size:12px;line-height:1.4;font-weight:700;color:var(--muted)}
+.rpnote svg{width:18px;height:18px;flex:none}
+.rpbody{flex:1;min-height:0;display:grid;grid-template-columns:230px minmax(0,1fr);gap:14px}
+.box.rkids{overflow:auto;display:flex;flex-direction:column;gap:8px;padding:12px}
+.rk{position:relative;isolation:isolate;display:flex;align-items:center;gap:8px;padding:8px 10px;border:none;background:none;cursor:pointer;text-align:left;font:inherit;color:var(--ink);filter:drop-shadow(0 3px 0 rgba(120,100,70,.14))}
+.rk::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:var(--frm,#fff) center/100% 100% no-repeat;border-radius:var(--R)}
+.rk:active{transform:translateY(3px)}
+.rk>svg{width:42px;height:42px;flex:none}
+.rkt{display:flex;flex-direction:column;gap:3px;min-width:0}
+.rkt b{font-size:15px}
+.rks{display:flex;gap:2px;flex-wrap:wrap}
+.rks.none{font-size:12px;font-weight:800;color:#b0402c}
+.oi{display:inline-grid;place-items:center;width:20px;height:20px}
+.oi svg{width:20px;height:20px}
+.box.rform{overflow:auto;padding:12px 18px}
+.rfhead{display:flex;align-items:center;gap:10px;padding-bottom:8px;margin-bottom:8px;border-bottom:2px dashed #e6dcc8}
+.rfhead>svg{width:48px;height:48px;flex:none}
+.rfhead>b{font-family:var(--f-display);font-size:21px;flex:none}
+.rfhead .said{margin-left:auto;font-size:13.5px;font-weight:700;color:#5e5a4c;background:#fbf4e6;padding:6px 12px;border-radius:var(--R);display:flex;flex-direction:column;max-width:60%}
+.rfhead .said small{font-size:11px;color:var(--muted)}
+.obf{display:flex;flex-direction:column;gap:9px}
+.obpair{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px}
+.obrow{display:flex;flex-direction:column;gap:6px}
+.obrow>b{font-size:13.5px;color:var(--muted)}
+.obf .cs{height:38px;font-size:14.5px;padding:0 11px;min-width:0}
+.obf .cs.ic{padding:0 12px 0 6px}
+.obf .cs svg{width:26px;height:26px}
+.obf .fin{font-size:15px;padding:7px 12px}
+.obrow.eat.off{opacity:.45}
+.obrow.eat.off .cs{pointer-events:none}
+.eatrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.eatrow .fin.dish{flex:1;min-width:200px}
+.rpfoot{flex:none;display:flex;align-items:flex-end;gap:12px}
+.rpmemo{flex:1;display:flex;flex-direction:column;gap:4px}
+.rpmemo b{font-size:13px;color:var(--muted)}
+.rpmemo .fin{font-size:16px;padding:9px 12px}
+.rpfoot .sbtn2{height:56px}
+
+/* records grid: contact icons instead of a ladder */
+.grid.g3 td{vertical-align:middle}
+.cell3{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:1px;min-height:46px;max-width:96px;margin:0 auto;padding:3px;border-radius:var(--R);background:rgba(255,255,255,.7)}
+.cell3 .oi,.cell3 .oi svg{width:21px;height:21px}
+.cell3 i{font-style:normal;font-size:10px;font-weight:800;color:var(--muted);width:100%;text-align:center}
+.cell3.none{font-size:11px;font-weight:700;color:#a3afa8;background:none}
+b.self{color:#e0a514;font-size:13px;line-height:1}
+.legend3{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:10px;font-size:12px;font-weight:800;color:#5e5a4c}
+.legend3 span{display:flex;align-items:center;gap:3px}
+.legend3 svg{width:18px;height:18px}
+
+/* follow-up modal */
+.mcard.wide.fum{width:860px}
+.fum .fugrid{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px}
+.fum .fugrid .frow:first-child{grid-column:1 / -1}
+.fum .obf{margin:6px 0 10px}
+
+/* guide page 4 */
+.g23 .gobs{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:14px}
+.g23 .gob{display:flex;flex-direction:column;gap:8px;background:rgba(255,255,255,.7);border-radius:var(--R);padding:12px 14px}
+.g23 .gob>i{font-style:normal;width:26px;height:26px;border-radius:50%;background:#a58bd6;color:#fff;font-weight:800;display:grid;place-items:center;font-size:14px}
+.g23 .gob>b{font-size:15px}
+.g23 .gics{display:flex;gap:8px;flex-wrap:wrap}
+.g23 .gics span{display:flex;flex-direction:column;align-items:center;font-size:12px;font-weight:800;gap:2px}
+.g23 .gics svg{width:38px;height:38px}
+.g23 .gtags{display:flex;flex-direction:column;gap:6px}
+.g23 .gtags span{font-size:13px;font-weight:800;background:#f3eefc;color:#6a55a8;padding:5px 10px;border-radius:var(--R);align-self:flex-start}
+.g23 .bub{margin:0;font-weight:800;font-size:15px}
+.g23 .gnote{margin:12px 0 0;font-size:14px;font-weight:700;color:var(--muted)}
+.fum .fugrid .cs{height:36px;font-size:14px;padding:0 10px}
+.fum .fugrid .cs svg{width:24px;height:24px}
+.qpeek .mrow{gap:14px}
+.qpeek .btn2{height:62px;padding:0 22px}
+/* kids form: all 8 animals in one row so the save button stays on screen */
+.adm .box.form .animals{grid-template-columns:repeat(8,minmax(0,1fr));gap:4px}
+.adm .box.form .animals .pl{padding:4px 1px;min-width:0}
+.adm .box.form .animals .pl svg{width:40px;height:40px}
+.adm .box.form .animals .pl span{font-size:10.5px;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.adm .box.form{overflow-y:auto}
+
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -2510,6 +2648,361 @@ Object.assign(L.ja,{kitBadge:'どうぶつ バッジ',kitBadgeS:'1人に1つ。�
 Object.assign(L.zh,{kitBadge:'动物徽章',kitBadgeS:'每个孩子一个。沿虚线剪下，用别针或胶带别在胸前（直径 6 厘米）。游戏里会用动物来称呼孩子，比如"轮到兔子了！"。'});
 function badgeSheet(){
   return `<section class="sheet badgesheet"><h2>${esc(t('kitBadge'))}</h2><p class="sub">${esc(t('kitBadgeS'))}</p><div class="badges">${ANIMALS.map(a=>{const [c1,c2]=BADGE_BG[a]||['#fff','#eee'];return `<div class="bdg"><div class="bin" style="background:radial-gradient(circle at 42% 36%,#fff 0,${c1} 48%,${c2} 100%)">${animal(a).replace('<svg ','<svg class="bani" ')}<span>${esc(t(a))}</span></div></div>`}).join('')}</div></section>`}
+
+/* ---------- v2.3: team of 1–8 + "absent today", feelings = secret multi-pick then talk, "what was different?" talk,
+   gentle album quiz, sticker copy not tied to eating, adult record split into contact / initiative / reactions / words ---------- */
+/* NOTE: top-level names here are `var` (not const) because some overridden functions are hoisted and may run before this file */
+
+/* ===== strings ===== */
+Object.assign(L.ja,{
+ storyRound:'ぜんぶの ひろばを クリア！ {f}の こと、また ひとつ わかったね。ごはんの あとで、ステッカーを はろう！',
+ panda:'パンダ',raion:'ライオン',
+ s_players:'たんけんたいの なかま',m_today:'きょう {n}人',m_away:'おやすみ',m_edit:'メンバーを へんしゅう',m_hint:'タップで「きょうは おやすみ」に できます（1〜8人）',m_none:'1人いじょう えらんでください',
+ k_full:'登録できるのは8人までです（どうぶつが8種類のため）。',k_oneEach:'どうぶつは 1人に1つ。ほかの子が使っているどうぶつは選べません（なかまは最大8人）。',
+ feel_multi:'2つまで えらべるよ',talk_pred:'みんなの こたえ、おなじ？ ちがう？',talk_feel:'どうして そう おもった？ みんなで はなしてみよう！',talk_feel1:'どうして そう おもった？ おとなの ひとに おしえてね',
+ a_why1:'どこが ちがった？ おとなの ひとに おしえてね',a_whySub:'ことばで いっても、ゆびで さしても いいよ',a_whyMemo:'おとなメモ（子どものことば・任意）',a_whyPh:'例：「もっと にがいと おもった」',a_whyNext:'つぎへ',
+ talk_diff:'おもった あじと ちがった ひとが いたよ！',talk_diffS:'どこが ちがったか、みんなで はなしてみよう',talk_ate:'{f}、どんな あじ だった？',talk_ateS:'おもってたのと おなじ？ ちがう？ はなしてみよう',talk_none:'きょう {f}で みつけた こと、はなしてみよう',
+ talk_tip:'正解は決めません。子どもの言葉は、あとで「記録」の「子どものことば」にメモできます。',talk_done:'はなしたよ！',
+ qz_color:'たんけんした {f}は、なにいろ だった？',qz_miss:'「{o}」だと おもったんだね。アルバムで もういちど みてみよう！',qz_peek:'アルバムを みる',qz_later:'こんど たしかめる',qz_retry:'もういちど こたえる',qz_close:'とじる',
+ ob_acts:'近づき方（いくつでも）',ob_init:'きっかけ',ob_react:'様子（いくつでも・任意）',ob_words:'子どものことば（任意）',ob_wordsPh:'例：「なかに たねが いっぱい！」',ob_eat:'食べた量（食べたときだけ・任意）',ob_dish:'料理',ob_dishPh:'例：いためもの',
+ act_look:'みた',act_touch:'さわった',act_smell:'かいだ',act_lick:'なめた',act_eat:'たべた',act_unk:'見ていない・わからない',
+ init_self:'自分から',init_invited:'誘われて',init_urged:'何度か誘って',
+ react_more:'もっとやりたがった',react_curious:'ふしぎがった',react_refuse:'いやがった',react_upset:'つらそう',
+ amt_bite:'ひとくち',amt_half:'半分くらい',amt_most:'ほぼ全部',
+ rec_title:'おとなの記録',rec_kidSaid:'子どもの答え（参考）',rec_whySaid:'「どこがちがった？」',rec_empty:'未記録',rec_none2:'まだ選んでいません',
+ rec_note:'見たままを記録します。食べなかった子も記録できます。点数ではなく、子どもには見せず、ほめる・評価する材料にしません。',
+ rec_memo:'この回のメモ（任意）',rec_memoPh:'例：切り口を見て、自分から においをかいだ子が多かった',rec_skip:'あとで',rec_save:'保存する',
+ rec_legend:'アイコン＝その回の近づき方（みた・さわった・かいだ・なめた・たべた）。★＝自分から。点数や段階ではなく、その子の様子の記録です。',
+ fu_level:'近づき方',fu_needKid:'子どもと「近づき方」を選んでください',fu_memoPh:'例：家の夕食で、自分から一切れ食べた',
+ gd_recT:'おとなの記録（食べなかった子も）',gd_recN:'段階や点数ではありません。「今日は見るだけ」も大切な記録です。',
+ gd_s8b:'近づき方・ことばを記録',gd_c2b:'近づき方・きっかけ・様子・ことば',gd_c3b:'4回のあとも、家庭や園での様子を追加できる',
+ aim_record:'大人が、食べなかった子も含めて「近づき方・きっかけ・様子・子どものことば」を分けて記録。段階や点数にはしない。'
+});
+Object.assign(L.zh,{
+ storyRound:'所有广场都完成啦！对{f}又多了解了一点。吃完饭，我们一起贴贴纸吧！',
+ panda:'熊猫',raion:'狮子',
+ s_players:'探险队成员',m_today:'今天 {n} 人',m_away:'请假',m_edit:'编辑成员',m_hint:'点一下可以设为"今天请假"（1–8 人）',m_none:'请至少选择 1 人',
+ k_full:'最多只能登记 8 人（动物只有 8 种）。',k_oneEach:'一个孩子一种动物。别的孩子用过的动物不能再选（成员最多 8 人）。',
+ feel_multi:'最多可以选 2 个',talk_pred:'大家的答案一样吗？不一样吗？',talk_feel:'为什么这么想呢？大家一起说说看吧！',talk_feel1:'为什么这么想呢？告诉大人吧',
+ a_why1:'哪里不一样呢？告诉大人吧',a_whySub:'用嘴说、用手指都可以',a_whyMemo:'大人备注（孩子的原话・可选）',a_whyPh:'例："我以为会更苦"',a_whyNext:'下一步',
+ talk_diff:'有小朋友觉得和想的味道不一样！',talk_diffS:'哪里不一样呢？大家一起说说看',talk_ate:'{f}是什么味道的？',talk_ateS:'和想的一样吗？不一样吗？说说看吧',talk_none:'说说今天在{f}上发现了什么吧',
+ talk_tip:'不设正确答案。孩子的话可以之后记在"记录"里的"孩子的原话"。',talk_done:'说完啦！',
+ qz_color:'探险时的{f}是什么颜色的？',qz_miss:'你觉得是"{o}"呀。去相册里再看一看吧！',qz_peek:'看相册',qz_later:'下次再确认',qz_retry:'再回答一次',qz_close:'关闭',
+ ob_acts:'接触方式（可多选）',ob_init:'主动性',ob_react:'表现（可多选・可选）',ob_words:'孩子的原话（可选）',ob_wordsPh:'例："里面有好多籽！"',ob_eat:'吃了多少（只在吃了时・可选）',ob_dish:'菜品',ob_dishPh:'例：炒菜',
+ act_look:'看了',act_touch:'摸了',act_smell:'闻了',act_lick:'舔了',act_eat:'吃了',act_unk:'没看到・不清楚',
+ init_self:'自己主动',init_invited:'被邀请后',init_urged:'邀请了几次',
+ react_more:'还想继续',react_curious:'觉得好奇',react_refuse:'不愿意',react_upset:'不舒服',
+ amt_bite:'一口',amt_half:'一半左右',amt_most:'几乎全部',
+ rec_title:'大人的记录',rec_kidSaid:'孩子的回答（参考）',rec_whySaid:'"哪里不一样？"',rec_empty:'未记录',rec_none2:'还没有选择',
+ rec_note:'按看到的情况记录。没吃的孩子也可以记录。这不是分数，不给孩子看，也不用来表扬或评价孩子。',
+ rec_memo:'本次备注（可选）',rec_memoPh:'例：看到切面后，很多孩子主动去闻了',rec_skip:'稍后',rec_save:'保存',
+ rec_legend:'图标＝那一次的接触方式（看・摸・闻・舔・吃）。★＝自己主动。这不是分数或等级，而是孩子当时的情况。',
+ fu_level:'接触方式',fu_needKid:'请选择孩子和"接触方式"',fu_memoPh:'例：家里晚饭时，自己吃了一块',
+ gd_recT:'大人的记录（没吃的孩子也记）',gd_recN:'不是等级，也不是分数。"今天只看了"也是重要的记录。',
+ gd_s8b:'记录接触方式和原话',gd_c2b:'接触方式・主动性・表现・原话',gd_c3b:'4 次之后，在家或园里的情况也能添加',
+ aim_record:'大人把"接触方式・主动性・表现・孩子的原话"分开记录，没吃的孩子也记。不做成等级或分数。'
+});
+Object.assign(JA_VOICE,{storyRound:'全部の広場を、クリア！ {f}のこと、また一つ、わかったね。ごはんの後で、ステッカーを貼ろう！',talk_feel:'どうして、そう思った？ みんなで、話してみよう！',talk_feel1:'どうして、そう思った？ 大人の人に、教えてね。',a_why1:'どこが、違った？ 大人の人に、教えてね。'});
+(function(){try{
+  ['ja','zh'].forEach(l=>{const a=L[l];if(a&&typeof a.appSub==='string')a.appSub=a.appSub.replace('v2.2','v2.3');
+    if(a&&Array.isArray(a.g_d))a.g_d[1]=l==='ja'?'記録するのは：よそう・かんそう・子どもの答え（食べた？／量／予想と同じ？）・大人が見た様子（近づき方・きっかけ・様子・ことば）・その後の記録':'记录的内容：预测、感想、孩子的回答（吃了吗／多少／和预测一样吗）、大人观察到的情况（接触方式・主动性・表现・原话）、之后的记录'})
+}catch(e){}})();
+
+/* ===== animals: 8 kinds (パンダ・ライオン are drawn here in the pastel pencil style) ===== */
+ANIMALS.push('panda','raion');
+BADGE_BG.panda=['#f3f1f8','#dcd7ea'];BADGE_BG.raion=['#fff4d8','#ffdf9e'];
+var NEW_AN={
+ panda:`<circle cx="22" cy="24" r="13" fill="#6f6a86"/><circle cx="78" cy="24" r="13" fill="#6f6a86"/><circle cx="22" cy="25" r="6" fill="#8c86a3"/><circle cx="78" cy="25" r="6" fill="#8c86a3"/>
+  <ellipse cx="50" cy="56" rx="41" ry="36" fill="#fbf8f3"/><ellipse cx="50" cy="60" rx="34" ry="27" fill="#ffffff" opacity=".55"/>
+  <ellipse cx="34" cy="53" rx="10.5" ry="13" fill="#6f6a86" transform="rotate(28 34 53)"/><ellipse cx="66" cy="53" rx="10.5" ry="13" fill="#6f6a86" transform="rotate(-28 66 53)"/>
+  <circle cx="35" cy="52" r="4.6" fill="#2f2b44"/><circle cx="65" cy="52" r="4.6" fill="#2f2b44"/><circle cx="36.6" cy="50.3" r="1.6" fill="#fff"/><circle cx="66.6" cy="50.3" r="1.6" fill="#fff"/>
+  <ellipse cx="50" cy="67" rx="5.6" ry="4" fill="#3d3953"/><path d="M43 73 q7 6 14 0" fill="none" stroke="#3d3953" stroke-width="2.6" stroke-linecap="round"/>
+  <ellipse cx="25" cy="71" rx="7" ry="4.6" fill="#f6b3c0" opacity=".75"/><ellipse cx="75" cy="71" rx="7" ry="4.6" fill="#f6b3c0" opacity=".75"/>`,
+ raion:`${Array.from({length:14},(_,k)=>{const a=k*Math.PI*2/14;return `<circle cx="${(50+Math.cos(a)*35).toFixed(1)}" cy="${(52+Math.sin(a)*33).toFixed(1)}" r="13" fill="${k%2?'#ec9a3a':'#f4ae4c'}"/>`}).join('')}
+  <circle cx="50" cy="52" r="35" fill="#efa445"/><circle cx="29" cy="30" r="8" fill="#ffdf9c"/><circle cx="71" cy="30" r="8" fill="#ffdf9c"/><circle cx="29" cy="30" r="4" fill="#f7c37e"/><circle cx="71" cy="30" r="4" fill="#f7c37e"/>
+  <ellipse cx="50" cy="55" rx="27" ry="25" fill="#ffdf9c"/>
+  <circle cx="40" cy="50" r="5.2" fill="#2f2b44"/><circle cx="60" cy="50" r="5.2" fill="#2f2b44"/><circle cx="41.7" cy="48.2" r="1.8" fill="#fff"/><circle cx="61.7" cy="48.2" r="1.8" fill="#fff"/>
+  <ellipse cx="44.5" cy="64" rx="7" ry="5.2" fill="#fff4d6"/><ellipse cx="55.5" cy="64" rx="7" ry="5.2" fill="#fff4d6"/>
+  <path d="M45 57 h10 q-1 5.5 -5 6.5 q-4 -1 -5 -6.5z" fill="#b8683f"/><path d="M45 69 q5 4 10 0" fill="none" stroke="#6a3f30" stroke-width="2.6" stroke-linecap="round"/>
+  <ellipse cx="31" cy="63" rx="5.6" ry="3.8" fill="#f39a9a" opacity=".75"/><ellipse cx="69" cy="63" rx="5.6" ry="3.8" fill="#f39a9a" opacity=".75"/>`
+};
+function animal(id){if(NEW_AN&&NEW_AN[id])return `<svg viewBox="0 0 100 100" aria-hidden="true">${NEW_AN[id]}</svg>`;
+  return `<svg viewBox="0 0 100 100" aria-hidden="true"><image href="${IMG[id]||IMG.usagi}" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid meet"/></svg>`}
+
+/* ===== team: everyone registered (max 8, one per animal) minus today's absences ===== */
+function awayIds(){const a=S.away;return a&&a.d===localDate()&&Array.isArray(a.ids)?a.ids:[]}
+function rosterIds(){const out=[],used=new Set();for(const k of S.kids){if(out.length>=8)break;if(used.has(k.animal))continue;used.add(k.animal);out.push(k.id)}return out}
+function teamIds(){const aw=awayIds();return rosterIds().filter(id=>!aw.includes(id))}
+function defaultPlayers(){return teamIds()}
+function soloK(){return !!(V&&V.sess&&V.sess.players.length===1)}
+function scrSetup(){
+  if(!foodById(V.food))V.food=S.foods[0].id;
+  V.players=teamIds();
+  const r=V.round!=null?V.round:roundIdx(V.food),fname=foodName(V.food);
+  talkNow=t('s_round')+' '+t('round',{n:r+1})+' '+t('r'+(r+1));
+  const food=S.foods.map(f=>`<button type="button" class="ocard" data-action="set-food" data-v="${f.id}" aria-pressed="${V.food===f.id}">${foodPic(f.id,'raw')}<span class="fn">${esc(foodName(f.id))}</span><small class="fr">${esc(t('roundOf',{n:Math.min(4,(S.camp[f.id]||0)+1)}))}</small></button>`).join('');
+  const chips=[0,1,2,3].map(i=>`<button type="button" class="rchip${i<(S.camp[V.food]||0)?' done':''}" data-action="set-round" data-v="${i}" aria-pressed="${r===i}">${i+1}</button>`).join('');
+  const roster=rosterIds(),aw=awayIds(),n=V.players.length;
+  const pl=roster.map(id=>{const k=kid(id),off=aw.includes(id);return `<button type="button" class="pl member tog${off?' away':''}" data-action="pl-away" data-v="${id}" aria-pressed="${!off}">${animal(k.animal)}<span class="mtx"><span class="nm">${esc(k.name)}</span><small>${esc(off?t('m_away'):t('k_ageN',{n:k.age}))}</small></span></button>`}).join('');
+  const modal=V.prep?`<div class="modal"><div class="mcard${V.prepFresh?' enter':''}"><h3>${esc(t('prep'))}</h3>${[0,1,2,3].map(i=>`<button type="button" class="check" data-action="prep-check" data-v="${i}" aria-pressed="${V.checks[i]}"><span class="bx">${V.checks[i]?IC.check:''}</span>${esc(t('prep'+i))}</button>`).join('')}<p class="hint">${esc(t('prepNote'))}</p><div class="mrow"><button type="button" class="btn2" data-action="prep-cancel">${esc(t('cancel'))}</button><button type="button" class="bigbtn" data-action="begin" ${V.checks.every(Boolean)?'':'disabled'}>${IC.go}<span>${esc(t('begin'))}</span></button></div></div></div>`:'';
+  V.prepFresh=false;
+  return statusBar()+`<div class="bg cloth"></div>${tbHome(esc(t('t_setup')))}
+   <div class="setup s2"><div class="panel2 fpanel"><h3>${esc(t('s_food'))}</h3><div class="chooser foods">${food}</div></div>
+    <div class="panel2 rpanel">
+     <div class="rbox"><div class="rhead"><b>${esc(t('s_round'))}</b><span class="rchips">${chips}</span></div><div class="rtitle">${esc(t('round',{n:r+1}))}「${esc(t('r'+(r+1)))}」</div>
+      <div class="rsenses">${ROUNDS[r].st.map(s=>`<span style="color:${SENSE_COLOR[s]};box-shadow:inset 0 0 0 2px ${SENSE_COLOR[s]}">${senseIcon(s)}${esc(t(s))}</span>`).join('<i>→</i>')}</div>
+      ${(S.camp[V.food]||0)>=4?`<p class="hint">${esc(t('allDone'))}</p>`:''}</div>
+     <div class="thead"><h3>${esc(t('s_players'))}${roster.length?`<span class="mcount${n?'':' zero'}">${esc(t('m_today',{n}))}</span>`:''}</h3><button type="button" class="sbtn2" data-action="kids-from-setup">${esc(t('m_edit'))}</button></div>
+     ${roster.length?`<div class="players${roster.length>6?' many':''}">${pl}</div><p class="mhint${n?'':' err'}">${esc(t(n?'m_hint':'m_none'))}</p>`:`<p class="hint">${esc(t('noKids'))}</p>`}
+     <div class="prepbox"><b>${esc(t('s_prepTitle'))}</b><p>${esc(t('prep_'+(r+1),{f:fname}))}</p></div></div></div>
+   <div class="br"><button type="button" class="bigbtn" data-action="open-prep" ${V.players.length?'':'disabled'}>${IC.go}<span>${esc(t('next'))}</span></button></div>${modal}`;
+}
+
+/* ===== stations: feelings are a secret multi-pick (opposites exclude each other), then everyone talks ===== */
+var FEEL_PAIR={yummy:'yucky',yucky:'yummy',strange:'normal',normal:'strange'};
+function isMulti2(){return isMulti()||V.phase==='feel'}
+function b2Intro(){if(V.screen!=='station')return;const rec=curRec(),m=phaseModel(),fn=foodName(V.sess.food);
+  const q=V.phase==='feel'?t('q_feel',{f:fn}):t(rec.q,{f:fn});
+  sayList([q].concat(m.cards.map(k=>t('o_'+k))),i=>{document.querySelectorAll('#scr .opt.b2').forEach((el,j)=>el.classList.toggle('hl',j===i-1));const b=document.querySelector('#scr .b2bub');if(b)b.classList.toggle('hl',i===0)},
+    ()=>{if(!V.intro)return;V.intro=false;V.handoff=S.vote==='secret'&&!!V.sel&&!soloK();render(false);if(V.handoff&&S.voice)speak(t('handoffSay',{a:kCall(V.sel)}))})}
+function scrStation(){
+  if(soloK())V.handoff=false;
+  const s=V.sess,rec=curRec(),sense=rec.sense,ph=V.phase,m=phaseModel(),fn=foodName(s.food);
+  const rev=!!V.rev[ph],show=visible(),nAns=s.players.filter(p=>m.data[p]).length,multi=isMulti2(),draft=V.draft||[],many=s.players.length>1;
+  const steps=hasFeel(sense)?3:2,idx=ph==='feel'?2:(rev?1:0);
+  let q,sub='',mood='talk';
+  if(ph==='feel'){if(rev){q=t(many?'talk_feel':'talk_feel1');mood='cheer'}else{q=t('q_feel',{f:fn});if(V.sel&&!V.intro)sub=t('feel_multi')}}
+  else if(rev){q=t('try_'+sense);mood='wow';if(many)sub=t('talk_pred')}
+  else q=t(rec.q,{f:fn});
+  const view=(ph==='pred'&&!rev&&s.round===1&&sense==='see')?'bag':((rev||ph==='feel')&&sense==='see'&&s.round>=3?(s.round===4?'long':'open'):'raw');
+  talkNow=V.intro?'':q+(sub&&rev?' '+sub:'');
+  const flip=V.flipNow;V.flipNow=false;
+  const opts=m.cards.map((k,i)=>{const who=show?s.players.filter(p=>hasAns(m.data[p],k)):[];const ch=!rev&&V.sel&&!V.intro&&draft.includes(k);
+    return `<button type="button" class="opt b2${rev?' ro':''}${ch?' chosen':''}${flip?' flip':''}" style="--i:${i}" data-action="pick" data-v="${k}">${ch?`<span class="tick">${IC.check}</span>`:''}${optPic(k,s.food)}<span class="ol">${esc(t('o_'+k))}</span><span class="pawns">${who.map(p=>kidPic(p)).join('')}</span></button>`}).join('');
+  const cur=V.sel&&!rev&&!V.intro?V.sel:null;
+  const toks=s.players.map(p=>`<button type="button" class="tok${p===cur?' cur':''}${m.data[p]?' fin':''}" data-action="sel" data-v="${p}" aria-label="${esc(kCall(p))}">${kidPic(p)}${m.data[p]?`<span class="done">${IC.check}</span>`:''}</button>`).join('');
+  const whose=cur?`<div class="whose">${kidPic(cur)}<b>${esc(t('turn',{a:kCall(cur)}))}</b></div>`:(!rev&&!V.intro?`<div class="whose w"><b>${esc(nAns===s.players.length?t('b2_all'):t('secretDone',{n:nAns}))}</b></div>`:'');
+  let nb='';
+  if(V.intro)nb='';
+  else if(!rev&&V.sel)nb=`<button type="button" class="bigbtn" data-action="pick-done" ${draft.length?'':'disabled'}>${IC.go}<span>${esc(t('pickDone'))}</span></button>`;
+  else if(!rev&&nAns===s.players.length)nb=`<button type="button" class="bigbtn reveal ready popin" data-action="reveal">${IC.star.replace('<svg ','<svg width="40" height="40" ')}<span>${esc(t('revealBtn'))}</span></button>`;
+  else if(rev&&ph==='pred'&&hasFeel(sense))nb=`<button type="button" class="bigbtn" data-action="to-feel">${IC.go}<span>${esc(t('toFeel'))}</span></button>`;
+  else if(rev)nb=`<button type="button" class="bigbtn" data-action="clear"><span class="okb">${IC.check}</span><span>${esc(t('clear'))}</span></button>`;
+  const cover=V.handoff&&V.sel&&!rev?`<div class="handoff b2h">${kidPic(V.sel)}<div><b>${esc(t('turn',{a:kCall(V.sel)}))}</b><p>${esc(t('handoffSub'))}</p></div><button type="button" class="bigbtn" data-action="handoff-ok">${esc(t('handoffBtn',{a:kCall(V.sel)}))}</button></div>`:'';
+  const sayK=ph==='feel'?'feel':!rev?'pred':sense==='taste'?'taste':'try';
+  return statusBar()+`<div class="bg" style="background:linear-gradient(${SENSE_BG[sense]},#fffdf8)"></div>
+   <div class="b2top"><button type="button" class="quit" data-action="back-map" aria-label="map">${IC.map.replace('<svg ','<svg width="24" height="24" ')}</button><span class="sbadge" style="background-image:url(${circ(sense)})">${senseIcon(sense)}</span><span class="grow"></span><span class="pdots">${Array.from({length:steps},(_,i)=>`<i class="${i===idx?'on':i<idx?'ok':''}"></i>`).join('')}</span><button type="button" class="atip" data-action="b2-tip">${esc(t('b2_tip'))}</button></div>
+   <div class="b2q">${pipi(mood)}<div class="b2bub"><div class="b2t"><b>${esc(q)}</b>${sub?`<small>${esc(sub)}</small>`:''}</div><button type="button" class="say3" data-action="b2-read" aria-label="${esc(t('b2_again'))}">${IC.speak}</button></div></div>
+   <div class="b2food${rev&&ph==='pred'?' spot':''}">${rev&&ph==='pred'?'<div class="rays2"></div>':''}${foodPic(s.food,view)}${rev&&ph==='pred'&&hasFeel(sense)?`<span class="hint3">${senseIcon(sense)}</span>`:''}</div>
+   <div class="opts b2opts${V.intro?' intro':''}">${opts}</div>${cover}
+   <div class="b2foot">${whose}<div class="toks">${toks}</div></div><div class="br">${nb}</div>
+   <div class="tippop${V.tipOpen?' open':''}"><b>${esc(t('forAdult'))}</b><span>${esc(t('say_'+sayK))}</span><small>${esc(t('avoid_'+sayK))}</small></div>`;
+}
+
+/* ===== after the meal: alone -> "where was it different? tell the adult"; group -> everyone talks before the sticker ===== */
+function scrAfter(){
+  if(soloK())V.handoff=false;
+  const s=V.sess,fn=foodName(s.food),p=V.af.kid;
+  const head=statusBar()+`<div class="bg" style="background:linear-gradient(#fdf3e6,#fffdf8)"></div><div class="tb"><span class="ptitle">${IC.star}${esc(t('t_after'))}</span><span class="grow"></span><button type="button" class="rbtn" data-action="speak" aria-label="${esc(t('speak'))}">${IC.speakG}</button></div>`;
+  if(!p)return V.af.step==='talk'?talkScreen(head):scrBag();
+  const a=s.after[p]||{},step=V.af.step;let q,sub='',cards=[],cur=null;
+  if(step==='eat'){q=t('a_eat',{f:fn});cards=AF_EAT;cur=a.eat;sub=soloK()?'':t('a_privacy')}
+  else if(step==='amt'){q=t('a_amt');cards=AF_AMT;cur=a.amt}
+  else if(step==='same'){q=t('a_same');cards=AF_SAME;cur=a.same;const tr=s.st.find(r=>r.sense==='taste'),pv=tr&&tr.pred[p];if(pv)sub=t('a_predWas',{o:ansTxt(pv)})}
+  else if(step==='why'){q=t('a_why1');sub=t('a_whySub')}
+  else q=a.eat==='no'?t('a_thanksNo'):t('a_thanks');
+  talkNow=(V.handoff?t('handoffSay',{a:kCall(p)})+' ':'')+(step==='eat'?t('af_intro')+' ':'')+q+((step==='same'||step==='why')&&sub?' '+sub:'');
+  let body;
+  if(cards.length)body=`<div class="opts af">${cards.map(k=>`<button type="button" class="opt" data-action="af-pick" data-v="${k}" aria-pressed="${cur===k}">${afPic(k,s.food)}<span>${esc(afLabel(k))}</span>${cur===k?`<span class="cnt">${IC.check.replace('<svg ','<svg width="18" height="18" ')}</span>`:''}</button>`).join('')}</div>`;
+  else if(step==='why')body=`<div class="whyz">${kidPic(p)}<div class="whyc"><span class="whyart">${afPic('diff',s.food)}</span><label class="whymemo"><b>${esc(t('a_whyMemo'))}</b><input class="fin" data-ob="afwhy" maxlength="80" value="${esc(a.why||'')}" placeholder="${esc(t('a_whyPh'))}" autocomplete="off"></label></div></div>`;
+  else body=`<div class="afthanks">${kidPic(p)}${IC.star.replace('<svg ','<svg width="70" height="70" ')}</div>`;
+  const cover=V.handoff?`<div class="handoff">${kidPic(p)}<div><b>${esc(t('turn',{a:kCall(p)}))}</b><p>${esc(t('handoffSub'))}</p></div><button type="button" class="bigbtn" data-action="handoff-ok">${esc(t('handoffBtn',{a:kCall(p)}))}</button></div>`:'';
+  const more=s.players.some(x=>x!==p&&!afterDone(x));
+  const btn=step==='thanks'?`<button type="button" class="bigbtn" data-action="af-next">${IC.go}<span>${esc(more?t('a_nextKid'):t('a_finish'))}</span></button>`
+    :step==='why'?`<button type="button" class="bigbtn" data-action="af-why-done">${IC.go}<span>${esc(t('a_whyNext'))}</span></button>`:'';
+  return head+`<div class="qzone"><div class="qfood kidq">${kidPic(p)}<i>${esc(kCall(p))}</i></div><div class="qtext"><span class="si" style="background:url(${circ('taste')}) center/100% 100% no-repeat">${senseIcon('taste')}</span><div><b>${esc(q)}</b>${sub?`<small>${esc(sub)}</small>`:''}</div><button type="button" class="say2" data-action="speak" aria-label="${esc(t('speak'))}">${IC.speak}</button></div></div>
+   ${body}${cover}<div class="prow afrow"><div class="turn">${kidPic(p)}<b>${esc(t('af_turn',{a:kCall(p)}))}</b></div>${kidChips(afterDone,'af-sel',p)}</div><div class="br">${btn}</div>`;
+}
+function talkScreen(head){
+  const s=V.sess,fn=foodName(s.food),A=p=>s.after[p]||{};
+  const diff=s.players.some(p=>A(p).same==='diff'),ate=s.players.some(p=>A(p).eat==='yes');
+  const main=diff?t('talk_diff'):ate?t('talk_ate',{f:fn}):t('talk_none',{f:fn}),sub=diff?t('talk_diffS'):ate?t('talk_ateS'):'';
+  talkNow=main+(sub?' '+sub:'');
+  return head+`<div class="talkz"><div class="tq">${pipi('cheer')}<div class="tbub"><b>${esc(main)}</b>${sub?`<small>${esc(sub)}</small>`:''}<button type="button" class="say3" data-action="speak" aria-label="${esc(t('speak'))}">${IC.speak}</button></div></div>
+    <div class="tkids">${s.players.map(p=>`<span class="tk">${kidPic(p)}<i>${esc(kCall(p))}</i></span>`).join('')}</div>
+    <p class="ttip"><b>${esc(t('forAdult'))}</b>${esc(t('talk_tip'))}</p></div>
+   <div class="br"><button type="button" class="bigbtn" data-action="talk-done">${IC.go}<span>${esc(t('talk_done'))}</span></button></div>`;
+}
+
+/* ===== album quiz: a wrong pick is not corrected on the spot — look at the album again, or check next time ===== */
+function scrQuiz(){
+  const Q=V.quiz,q=Q.qs[Q.i],id=V.isle,picked=Q.picked,ok=!!picked&&picked===q.ans,miss=!!picked&&!ok;
+  const day=q.k==='color'?0:q.k==='cut'?2:3,fact=islandFacts(id)[day];
+  const nm=k=>q.k==='color'?t('o_'+k):foodName(k);
+  talkNow=Q.peek?fact:q.q+(ok?' '+t('qz_yes'):miss?' '+t('qz_miss',{o:nm(picked)}):'');
+  const pic=k=>q.k==='color'?optPic(k,id):foodPic(k,q.k==='cut'?'open':'long');
+  const opts=q.opts.map(k=>`<button type="button" class="opt qz${ok?(k===q.ans?' right':' ro'):miss?(k===picked?' mine':' ro'):''}" data-action="quiz-pick" data-v="${k}">${pic(k)}<span>${esc(nm(k))}</span></button>`).join('');
+  const last=Q.i>=Q.qs.length-1;
+  const fb=ok?`<div class="qfb ok">${esc(t('qz_yes'))}</div>`:miss?`<div class="qfb">${esc(t('qz_miss',{o:nm(picked)}))}</div>`:'';
+  const btns=ok?`<button type="button" class="bigbtn" data-action="quiz-next">${IC.go}<span>${esc(last?t('qz_end'):t('qz_next'))}</span></button>`
+    :miss?`<button type="button" class="btn2 qzb" data-action="quiz-next">${esc(t('qz_later'))}</button><button type="button" class="bigbtn" data-action="quiz-peek">${IC.go}<span>${esc(t('qz_peek'))}</span></button>`:'';
+  const peek=Q.peek?`<div class="modal qpeek"><div class="mcard"><div class="aday got"><svg class="nopc" viewBox="-95 -105 190 210" aria-hidden="true">${sticker(day,id,false)}</svg><small>${esc(t('round',{n:day+1}))}</small><p>${esc(fact)}</p></div>
+     <div class="mrow"><button type="button" class="btn2" data-action="quiz-peek-close">${esc(t('qz_close'))}</button><button type="button" class="bigbtn sm" data-action="quiz-retry">${IC.go}<span>${esc(t('qz_retry'))}</span></button></div></div></div>`:'';
+  return statusBar()+`<div class="bg albumbg"></div><div class="tb"><button type="button" class="rbtn" data-action="quiz-quit" aria-label="back">${IC.back.replace('currentColor','#8a7cc0')}</button><span class="ptitle">${esc(t('qz_title'))} ${Q.i+1}/${Q.qs.length}</span><span class="grow"></span><button type="button" class="rbtn" data-action="speak" aria-label="${esc(t('speak'))}">${IC.speakG}</button></div>
+   <div class="narrtop">${narr(q.q)}</div><div class="opts qzopts">${opts}</div>${fb}
+   ${picked?`<div class="br">${btns}</div>`:''}${peek}`;
+}
+
+/* ===== adult record: contact (multi) / initiative / reactions / child's words / amount eaten (optional) ===== */
+var OB_ACTS=['look','touch','smell','lick','eat'],OB_INIT=['self','invited','urged'],OB_REACT=['more','curious','refuse','upset'],OB_AMT=['bite','half','most'];
+var EAT_IC='<svg class="nopc" viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="22" rx="15" ry="5" fill="#fff6e2"/><path d="M8 22h32c0 9-7 16-16 16S8 31 8 22z" fill="#f2b98a"/><path d="M14 30c4 3 16 3 20 0" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".7"/><path d="M33 8l-6 13" stroke="#b58a6a" stroke-width="3" stroke-linecap="round"/><path d="M38 9l-7 12" stroke="#b58a6a" stroke-width="3" stroke-linecap="round"/></svg>';
+var UNK_IC='<svg class="nopc" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" fill="#eef1f4"/><text x="24" y="32" text-anchor="middle" font-size="22" font-weight="800" fill="#9aa6ad">?</text></svg>';
+function actIc(k){return k==='eat'?EAT_IC:k==='unk'?UNK_IC:senseIcon({look:'see',touch:'touch',smell:'smell',lick:'taste'}[k])}
+function blankOb(){return{acts:[],init:'',react:[],words:'',amt:'',dish:''}}
+var LV2OB={k0:{acts:['look'],react:['refuse']},k1:{acts:['look','touch','smell']},k2:{acts:['look','touch','smell','lick']},k3:{acts:['look','touch','smell','eat'],amt:'bite'},k4:{acts:['look','touch','smell','eat'],amt:'half'},k5:{acts:['look','touch','smell','eat'],amt:'most'}};
+function obFromLv(lv){return lv&&LV2OB[lv]?Object.assign(blankOb(),JSON.parse(JSON.stringify(LV2OB[lv])),{legacy:lv}):null}
+function obOf(x,p){return (x.obs&&x.obs[p])||obFromLv((x.lv||{})[p])}
+function obHas(ob){return !!ob&&((ob.acts||[]).length>0)}
+function obIcons(ob){return (ob.acts||[]).map(k=>`<span class="oi" title="${esc(t('act_'+k))}">${actIc(k)}</span>`).join('')}
+function obSum(ob){if(!obHas(ob))return t('rec_empty');return (ob.acts||[]).map(k=>t('act_'+k)).join('・')+(ob.init?' / '+t('init_'+ob.init):'')}
+function toggleOb(ob,f,v){
+  if(f==='acts'){let a=(ob.acts||[]).slice();if(v==='unk')a=a.includes('unk')?[]:['unk'];else{a=a.filter(x=>x!=='unk');a=a.includes(v)?a.filter(x=>x!==v):a.concat(v);a=OB_ACTS.filter(x=>a.includes(x))}ob.acts=a;if(!a.includes('eat')){ob.amt='';}}
+  else if(f==='react'){const a=ob.react||[];ob.react=a.includes(v)?a.filter(x=>x!==v):OB_REACT.filter(x=>a.includes(x)||x===v)}
+  else if(f==='init'||f==='amt')ob[f]=ob[f]===v?'':v}
+function obForm(ob,act,food,pre){
+  const chip=(f,v,lab,on,ic)=>`<button type="button" class="cs${ic?' ic':''}" data-action="${act}" data-v="${f}|${v}" aria-pressed="${on}">${ic||''}<span>${esc(lab)}</span></button>`;
+  const ate=(ob.acts||[]).includes('eat');
+  return `<div class="obf">
+   <div class="obrow"><b>${esc(t('ob_acts'))}</b><div class="chipsel acts">${OB_ACTS.map(k=>chip('acts',k,t('act_'+k),(ob.acts||[]).includes(k),actIc(k))).join('')}${chip('acts','unk',t('act_unk'),(ob.acts||[]).includes('unk'))}</div></div>
+   <div class="obpair"><div class="obrow"><b>${esc(t('ob_init'))}</b><div class="chipsel">${OB_INIT.map(k=>chip('init',k,t('init_'+k),ob.init===k)).join('')}</div></div>
+   <div class="obrow"><b>${esc(t('ob_react'))}</b><div class="chipsel">${OB_REACT.map(k=>chip('react',k,t('react_'+k),(ob.react||[]).includes(k))).join('')}</div></div></div>
+   <label class="obrow"><b>${esc(t('ob_words'))}</b><input class="fin" data-ob="${pre}words" maxlength="120" value="${esc(ob.words||'')}" placeholder="${esc(t('ob_wordsPh'))}" autocomplete="off"></label>
+   <div class="obrow eat${ate?'':' off'}"><b>${esc(t('ob_eat'))}</b><div class="eatrow"><div class="chipsel">${OB_AMT.map(k=>chip('amt',k,t('amt_'+k),ob.amt===k)).join('')}</div><input class="fin dish" data-ob="${pre}dish" maxlength="30" value="${esc(ob.dish||'')}" placeholder="${esc(t('ob_dish'))}：${esc(t('ob_dishPh'))}" autocomplete="off" ${ate?'':'disabled'}></div></div>
+  </div>`}
+function prefillLevels(){const s=V.sess;if(!s)return;if(!s.obs)s.obs={};s.players.forEach(p=>{if(!s.obs[p])s.obs[p]=obOf(s,p)||blankOb()});if(!V.recKid||!s.players.includes(V.recKid))V.recKid=s.players[0]}
+function scrRecord(){
+  const s=V.sess;prefillLevels();talkNow=t('rec_title');const p=V.recKid,ob=s.obs[p],a=s.after[p]||{};
+  const kids=s.players.map(id=>{const o=s.obs[id],has=obHas(o);return `<button type="button" class="rk${id===p?' cur':''}" data-action="rk-sel" data-v="${id}" aria-current="${id===p}">${kidPic(id)}<span class="rkt"><b>${esc(kName(id))}</b><span class="rks${has?'':' none'}">${has?obIcons(o):esc(t('rec_empty'))}</span></span></button>`}).join('');
+  return admHead('records')+`<div class="page recp">
+    <div class="rphead">${foodPic(s.food,'raw')}<b>${esc(fmtDate(s.date))}・${esc(foodName(s.food))}　${esc(t('round',{n:s.round}))}</b><span class="grow"></span><span class="rpnote">${IC.lock}${esc(t('rec_note'))}</span></div>
+    <div class="rpbody"><div class="box rkids">${kids}</div>
+     <div class="box rform"><div class="rfhead">${kidPic(p)}<b>${esc(kName(p))}</b><span class="said"><small>${esc(t('rec_kidSaid'))}</small>${esc(saidText(a))}${a.why?`　${esc(t('rec_whySaid'))}${esc(a.why)}`:''}</span></div>${obForm(ob,'ob',s.food,'')}</div></div>
+    <div class="rpfoot"><label class="rpmemo"><b>${esc(t('rec_memo'))}</b><input class="fin" data-f="memo" maxlength="200" value="${esc(s.memo||'')}" placeholder="${esc(t('rec_memoPh'))}" autocomplete="off"></label>
+     <button type="button" class="sbtn2" data-action="rec-save" data-v="skip">${esc(t('rec_skip'))}</button><button type="button" class="bigbtn sm" data-action="rec-save" data-v="save">${IC.go}<span>${esc(t('rec_save'))}</span></button></div></div>`;
+}
+function scrRecords(){
+  talkNow=t('records');
+  const list=S.sessions.slice().reverse().map(x=>{const pend=isPending(x);return `<li>${foodPic(x.food,'raw')}<span class="grow">${esc(fmtDate(x.date))} · ${esc(foodName(x.food))} ${esc(t('round',{n:x.round}))}${x.demo?`<span class="tag">${esc(t('example'))}</span>`:''}<br><span class="mut">${x.players.map(p=>esc(kName(p))).join('・')}・${esc(x.complete?t('complete'):t('partial'))}</span>${pend?`<span class="tag pend">${esc(t('rec_pending'))}</span>`:''}</span>${x.demo?'':`<button type="button" class="sbtn2${pend?' hi':''}" data-action="rec-edit" data-v="${x.id}">${esc(pend?t('rec_doNow'):t('k_edit'))}</button>`}</li>`}).join('');
+  const usedFoods=[...new Set([...S.sessions.map(x=>x.food),...S.follow.map(x=>x.food)])];
+  const cell=(ob,extra)=>obHas(ob)?`<td><span class="cell3">${obIcons(ob)}${ob.init==='self'?'<b class="self">★</b>':''}${extra?`<i>${esc(extra)}</i>`:''}</span></td>`:`<td><span class="cell3 none">${esc(t('notRec'))}</span></td>`;
+  const dash='<td><span class="cell3 none">—</span></td>';
+  const grids=usedFoods.map(f=>{const ss=S.sessions.filter(x=>x.food===f),fs=S.follow.filter(x=>x.food===f);
+    const kids=[...new Set([...ss.flatMap(x=>x.players),...fs.map(x=>x.kid)])];
+    return `<p class="gh">${esc(t('rec_grid',{f:foodName(f)}))}</p><table class="grid g3"><tr><th></th>${[1,2,3,4].map(r=>`<th>${esc(t('round',{n:r}))}</th>`).join('')}<th>${esc(t('rec_after'))}</th></tr>${kids.map(k=>`<tr><td class="who">${kidPic(k).replace('<svg ','<svg class="av" ')}<span>${esc(kName(k))}</span></td>${[1,2,3,4].map(r=>{const x=ss.filter(y=>y.round===r&&y.players.includes(k)).pop();return x?cell(obOf(x,k)):dash}).join('')}${(()=>{const mine=fs.filter(y=>y.kid===k).sort((a,b)=>a.date<b.date?-1:1);if(!mine.length)return dash;const last=mine[mine.length-1];return cell(last.ob||obFromLv(last.lv),mine.length>1?'×'+mine.length:'')})()}</tr>`).join('')}</table>`}).join('');
+  const fl=S.follow.slice().sort((a,b)=>a.date<b.date?1:-1).map(x=>{const ob=x.ob||obFromLv(x.lv);return `<li>${kidPic(x.kid)}<span class="grow">${esc(fmtDate(x.date))} · ${esc(kName(x.kid))} · ${esc(foodName(x.food))}${x.demo?`<span class="tag">${esc(t('example'))}</span>`:''}<br><span class="mut">${esc(obSum(ob))}${ob&&ob.words?'・「'+esc(ob.words)+'」':''}${x.memo?'・'+esc(x.memo):''}</span></span><button type="button" class="sbtn2 warn" data-action="fu-del" data-v="${x.id}">${esc(V.confirm==='fu:'+x.id?t('k_delSure'):t('k_del'))}</button></li>`}).join('');
+  return admHead('records')+`
+   <div class="page two recs"><div class="box"><h4>${esc(t('rec_sessions'))}</h4>${list?`<ul class="slist">${list}</ul>`:`<p>${esc(t('rec_none'))}</p>`}
+     <div class="rowb" style="margin-top:10px"><button type="button" class="sbtn2" data-action="demo">${esc(t('rec_demo'))}</button><button type="button" class="sbtn2" data-action="rec-copy">${esc(copyState==='rok'?t('rec_copied'):t('rec_copy'))}</button><button type="button" class="sbtn2 warn" data-action="rec-del">${esc(V.confirm==='rec'?t('rec_delSure'):t('rec_del'))}</button></div>
+     ${copyState==='rfail'?`<p class="hint">${esc(t('rec_copyFail'))}</p><textarea class="logbox" readonly>${esc(recTSV())}</textarea>`:''}</div>
+    <div class="box"><div class="rowb" style="justify-content:flex-end"><button type="button" class="sbtn2 hi" data-action="fu-open">＋ ${esc(t('fu_add'))}</button></div>${grids||`<p>${esc(t('rec_none'))}</p>`}
+     <div class="legend3">${OB_ACTS.map(k=>`<span>${actIc(k)}${esc(t('act_'+k))}</span>`).join('')}<span><b class="self">★</b>${esc(t('init_self'))}</span></div><p class="hint" style="margin-top:4px">${esc(t('rec_legend'))}</p>
+     ${fl?`<h4 style="margin-top:12px">${esc(t('fu_list'))}</h4><ul class="slist">${fl}</ul>`:''}</div></div>${V.fu?fuModal():''}`;
+}
+function fuModal(){const f=V.fu;if(!f.ob)f.ob=blankOb();
+  return `<div class="modal"><div class="mcard wide fum"><h3>${esc(t('fu_title'))}</h3>
+   <div class="fugrid"><div class="frow"><b>${esc(t('fu_kid'))}</b><div class="chipsel">${S.kids.map(k=>`<button type="button" class="cs" data-action="fu-kid" data-v="${k.id}" aria-pressed="${f.kid===k.id}">${animal(k.animal)}${esc(k.name)}</button>`).join('')}</div></div>
+   <div class="frow"><b>${esc(t('fu_food'))}</b><div class="chipsel">${S.foods.map(x=>`<button type="button" class="cs" data-action="fu-food" data-v="${x.id}" aria-pressed="${f.food===x.id}">${esc(foodName(x.id))}</button>`).join('')}</div></div>
+   <label class="frow"><b>${esc(t('fu_date'))}</b><input type="date" class="fin" data-f="fu.date" value="${esc(f.date)}" style="max-width:260px"></label></div>
+   ${obForm(f.ob,'fob',f.food,'fu.')}
+   <label class="frow"><b>${esc(t('fu_memo'))}</b><input class="fin" data-f="fu.memo" maxlength="120" value="${esc(f.memo)}" placeholder="${esc(t('fu_memoPh'))}" autocomplete="off"></label>
+   ${f.err?`<p class="hint err">${esc(f.err)}</p>`:''}
+   <div class="mrow"><button type="button" class="btn2" data-action="fu-cancel">${esc(t('cancel'))}</button><button type="button" class="bigbtn sm" data-action="fu-save">${IC.go}<span>${esc(t('fu_save'))}</span></button></div></div></div>`}
+function recTSV(){const H=['type','date','food','round','child','animal','age','predictions','feelings','ate','amount','same_as_guess','child_why','contact','initiative','reactions','child_words','eat_amount','dish','legacy_level','memo','complete','demo'];const rows=[H.join('\t')];
+  const cl=s=>String(s==null?'':s).replace(/[\t\n]/g,' ');const J=v=>[].concat(v||[]).join('+');
+  const obCols=ob=>ob?[J(ob.acts),ob.init||'',J(ob.react),ob.words||'',ob.amt||'',ob.dish||'',ob.legacy||'']:['','','','','','',''];
+  S.sessions.forEach(x=>x.players.forEach(p=>{const k=(x.snap&&x.snap[p])||kidInfo(p),a=(x.after||{})[p]||{};
+    rows.push(['session',x.date,foodName(x.food),x.round,k.name,k.animal,k.age,x.st.map(r=>`${r.sense}:${J((r.pred||{})[p])}`).join('|'),x.st.filter(r=>r.feel).map(r=>`${r.sense}:${J(r.feel[p])}`).join('|'),a.eat||'',a.amt||'',a.same||'',a.why||'',...obCols(obOf(x,p)),x.memo||'',x.complete?1:0,x.demo?1:0].map(cl).join('\t'))}));
+  S.follow.forEach(x=>{const k=kidInfo(x.kid);rows.push(['follow',x.date,foodName(x.food),'',k.name,k.animal,k.age,'','','','','','',...obCols(x.ob||obFromLv(x.lv)),x.memo||'','',x.demo?1:0].map(cl).join('\t'))});
+  return rows.join('\n')}
+function addDemo(){
+  if(S.kids.length<2)S.kids.push(...sampleKids());
+  const used=new Set(),ids=[];for(const k of S.kids){if(ids.length>=4)break;if(used.has(k.animal))continue;used.add(k.animal);ids.push(k.id)}
+  const snap=snapOf(ids),ja=S.lang==='ja';
+  const A=(e,amt,same)=>e==='no'?{eat:'no'}:{eat:'yes',amt,same};
+  const O=(acts,init,extra)=>Object.assign(blankOb(),{acts,init},extra||{});
+  const mk=(daysAgo,round,obs,after)=>{S.sessions.push({id:uid(),date:new Date(Date.now()-daysAgo*864e5).toISOString(),food:'pepper',round,players:ids,snap,st:ROUNDS[round-1].st.map(s=>{const q=question(s,round);return{sense:s,q:q.q,pred:{},feel:hasFeel(s)?{}:null}}),after:Object.fromEntries(ids.map((p,i)=>[p,after[i]]).filter(x=>x[1])),obs:Object.fromEntries(ids.map((p,i)=>[p,obs[i]]).filter(x=>x[1])),lv:{},memo:'',complete:true,pendingRec:false,dur:5*60000,demo:true})};
+  mk(20,1,[O(['look'],'invited',{react:['refuse']}),O(['look','touch'],'invited'),O(['look'],'urged'),O(['look','touch','eat'],'self',{amt:'bite',words:ja?'つるつるしてる':'滑滑的'})],[A('no'),A('no'),A('no'),A('yes','little','diff')]);
+  mk(14,2,[O(['look','touch'],'invited'),O(['look','smell'],'self',{react:['curious']}),O(['look'],'invited'),O(['look','smell','eat'],'self',{amt:'bite'})],[A('no'),A('no'),A('no'),A('yes','little','same')]);
+  mk(8,3,[O(['look','touch','smell'],'self',{react:['curious'],words:ja?'なかに たねが いっぱい！':'里面有好多籽！'}),O(['look','touch','eat'],'invited',{amt:'bite'}),O(['look','touch'],'invited'),O(['look','touch','eat'],'self',{amt:'half'})],[A('no'),A('yes','little','diff'),A('no'),A('yes','half','same')]);
+  mk(2,4,[O(['look','touch','smell','eat'],'self',{amt:'bite'}),O(['look','smell','eat'],'self',{amt:'bite',react:['more']}),O(['look','touch','smell'],'invited'),O(['look','touch','eat'],'self',{amt:'half'})],[A('yes','little','diff'),A('yes','little','same'),A('no'),A('yes','half','same')]);
+  S.follow.push({id:uid(),date:localDate(-1),kid:ids[0],food:'pepper',ob:O(['look','eat'],'self',{amt:'bite',words:ja?'これ ピーマン？':'这是青椒吗？'}),memo:ja?'家の夕食で、自分から一切れ食べた':'家里晚饭时，自己吃了一块',snap:snap[ids[0]],demo:true});
+  save();log('lg_demo');
+}
+/* guide page 4: the record is not a ladder */
+GD[3]=()=>`<div class="gcard glad g23"><h5>${esc(t('gd_recT'))}</h5>
+   <div class="gobs"><div class="gob"><i>1</i><b>${esc(t('ob_acts'))}</b><div class="gics">${OB_ACTS.map(k=>`<span>${actIc(k)}<small>${esc(t('act_'+k))}</small></span>`).join('')}</div></div>
+    <div class="gob"><i>2</i><b>${esc(t('ob_init'))}</b><div class="gtags">${OB_INIT.map(k=>`<span>${esc(t('init_'+k))}</span>`).join('')}</div></div>
+    <div class="gob"><i>3</i><b>${esc(t('ob_words'))}</b><p class="bub">${esc(t('ob_wordsPh').replace(/^例：/,'').replace(/^例：/,''))}</p></div></div>
+   <p class="gnote">${esc(t('gd_recN'))}</p></div>
+  <div class="gtri">${[[afPic('yes','pepper'),1],[IC.chart,2],[IC.clock,3]].map(([ic,n])=>`<div class="gcard gc">${ic}<span><b class="gcb">${esc(t('gd_c'+n))}</b><small>${esc(t('gd_c'+n+'b'))}</small></span></div>`).join('')}</div>
+  <p class="gpriv">${IC.lock}${esc(t('gd_priv'))}</p>`;
+FRAME_SELS.push(['.rk','fCard'],['.rk.cur','fSun']);
+
+/* ===== events (capture phase, so they run before the older handlers) ===== */
+document.addEventListener('click',e=>{const el=e.target.closest&&e.target.closest('[data-action]');if(!el||el.disabled)return;const a=el.dataset.action,v=el.dataset.v;
+  const stop=()=>{e.stopImmediatePropagation()};
+  if(a==='pl-away'){stop();sfx('tap');const aw=awayIds().slice(),i=aw.indexOf(v);if(i>=0)aw.splice(i,1);else aw.push(v);S.away={d:localDate(),ids:aw};save();render(false);return}
+  if(a==='kf-save'){stop();sfx('tap');const f=V.kf,name=(f.name||'').trim();
+    if(!name){f.err=t('k_needName');render(false);return}
+    if(!f.id&&S.kids.length>=8){f.err=t('k_full');render(false);return}
+    if(S.kids.some(k=>k.animal===f.animal&&k.id!==f.id)){f.err=t('k_animalUsed');render(false);return}
+    if(f.id){const k=kid(f.id);if(k)Object.assign(k,{name,age:f.age,animal:f.animal,note:(f.note||'').trim(),sample:false})}
+    else S.kids.push({id:uid(),name,age:f.age,animal:f.animal,note:(f.note||'').trim()});
+    save();log('lg_kid',{a:name});V.kf=blankKF();render(false);return}
+  /* every answer is confirmed with 「きめた！」 — the turn never passes to the next child automatically */
+  if(a==='sel'&&V.screen==='station'){stop();sfx('tap');if(V.rev[V.phase])return;V.sel=v;const d=phaseModel().data[v];V.draft=Array.isArray(d)?d.slice():d?[d]:[];V.handoff=S.vote==='secret'&&!soloK();render(false);if(S.voice)speak(t(V.handoff?'handoffSay':'turn',{a:kCall(v)}));return}
+  if(V.screen==='station'&&V.phase==='pred'&&!V.rev.pred&&!isMulti()&&(a==='pick'||a==='pick-done')){stop();const m=phaseModel();
+    if(a==='pick'){if(!V.sel)V.sel=nextUnset(m.data);if(!V.sel)return;V.draft=(V.draft||[])[0]===v?[]:[v];sfx('place');render(false);return}
+    if(!V.sel||!(V.draft||[]).length)return;const who=V.sel;m.data[who]=V.draft[0];V.draft=[];V.lastPlaced=who;sfx('piece');log('lg_pred',{a:kName(who),o:t('o_'+m.data[who])});
+    V.sel=nextUnset(m.data);V.handoff=S.vote==='secret'&&!!V.sel&&!soloK();render(false);if(V.sel&&S.voice)setTimeout(()=>speak(t(V.handoff?'handoffSay':'turn',{a:kCall(V.sel)})),250);return}
+  if(V.screen==='station'&&V.phase==='feel'&&!V.rev.feel&&(a==='pick'||a==='pick-done')){stop();const m=phaseModel();
+    if(a==='pick'){if(!V.sel)V.sel=nextUnset(m.data);if(!V.sel)return;let d=(V.draft||[]).slice();
+      if(v==='unknown')d=d.includes('unknown')?[]:['unknown'];else{d=d.filter(x=>x!=='unknown');if(d.includes(v))d=d.filter(x=>x!==v);else{d=d.filter(x=>x!==FEEL_PAIR[v]);d.push(v)}}
+      V.draft=FEEL.filter(x=>d.includes(x));sfx('place');render(false);return}
+    if(!V.sel||!(V.draft||[]).length)return;const who=V.sel;m.data[who]=V.draft.slice();V.draft=[];V.lastPlaced=who;sfx('piece');log('lg_feel',{a:kName(who),o:ansTxt(m.data[who])});
+    V.sel=nextUnset(m.data);V.handoff=S.vote==='secret'&&!!V.sel&&!soloK();render(false);if(V.sel&&S.voice)setTimeout(()=>speak(t(V.handoff?'handoffSay':'turn',{a:kCall(V.sel)})),250);return}
+  if(a==='af-pick'&&V.screen==='after'&&V.af.step==='same'&&v==='diff'&&soloK()){stop();const s=V.sess,p=V.af.kid;if(!p)return;const A=s.after[p]||(s.after[p]={});A.same='diff';sfx('place');log('lg_after',{a:kName(p),o:afLabel(v)});V.af.step='why';render(true);return}
+  if(a==='af-why-done'){stop();sfx('tap');V.af.step='thanks';render(true);return}
+  if(a==='af-next'&&V.sess&&V.sess.players.length>1){const s=V.sess,p=V.af.kid;const nx=s.players.find(x=>x!==p&&!afterDone(x))||null;if(!nx){stop();sfx('tap');V.af={kid:null,step:'talk'};V.handoff=false;render(true);return}}
+  if(a==='talk-done'){stop();sfx('tap');V.af={kid:null,step:'eat'};V.bagOpen=false;go('bag');return}
+  if(a==='quiz-pick'){stop();const Q=V.quiz;if(!Q||Q.picked)return;Q.picked=v;Q.peek=false;sfx(v===Q.qs[Q.i].ans?'piece':'place');render(true);return}
+  if(a==='quiz-peek'){stop();sfx('tap');if(V.quiz){V.quiz.peek=true;render(true)}return}
+  if(a==='quiz-peek-close'){stop();sfx('tap');if(V.quiz){V.quiz.peek=false;render(false)}return}
+  if(a==='quiz-retry'){stop();sfx('tap');if(V.quiz){V.quiz.peek=false;V.quiz.picked=null;render(true)}return}
+  if(a==='quiz-next'&&V.quiz){V.quiz.peek=false}
+  if(a==='rk-sel'){stop();sfx('tap');V.recKid=v;render(false);return}
+  if(a==='ob'||a==='fob'){stop();sfx('tap');const [f,val]=v.split('|');const ob=a==='ob'?(V.sess&&V.sess.obs&&V.sess.obs[V.recKid]):(V.fu&&(V.fu.ob||(V.fu.ob=blankOb())));if(!ob)return;toggleOb(ob,f,val);if(a==='fob'&&V.fu.err)V.fu.err='';render(false);return}
+  if(a==='rec-edit'){stop();sfx('tap');const x=S.sessions.find(y=>y.id===v);if(!x)return;
+    V.sess=Object.assign({},x,{obs:JSON.parse(JSON.stringify(Object.fromEntries(x.players.map(p=>[p,obOf(x,p)||blankOb()])))),memo:x.memo||'',after:x.after||{},t0:Date.now(),done:[0,1,2]});
+    V.editRec=x.id;V.saved=true;V.recKid=x.players[0];go('record');return}
+  if(a==='rec-save'){stop();sfx('tap');const keep=v==='save';
+    if(V.editRec){const x=S.sessions.find(y=>y.id===V.editRec);if(x&&keep){x.obs=JSON.parse(JSON.stringify(V.sess.obs||{}));x.memo=V.sess.memo||'';x.pendingRec=false;save()}V.editRec=null;V.sess=null;go('records');return}
+    const obs=V.sess&&V.sess.obs;saveSession(keep);const x=S.sessions[S.sessions.length-1];if(keep&&x&&obs){x.obs=JSON.parse(JSON.stringify(obs));save()}go('end');return}
+  if(a==='fu-open'){stop();sfx('tap');V.fu={kid:S.kids[0]?S.kids[0].id:null,food:V.food&&foodById(V.food)?V.food:S.foods[0].id,date:localDate(0),ob:blankOb(),memo:'',err:''};render(false);return}
+  if(a==='fu-save'){stop();sfx('tap');const f=V.fu;if(!f)return;if(!f.kid||!obHas(f.ob)){f.err=t('fu_needKid');render(false);return}
+    S.follow.push({id:uid(),date:f.date||localDate(0),kid:f.kid,food:f.food,foodName:foodName(f.food),ob:JSON.parse(JSON.stringify(f.ob)),memo:(f.memo||'').trim(),snap:snapOf([f.kid])[f.kid]});save();log('lg_fu',{a:kName(f.kid)});V.fu=null;render(false);return}
+},true);
+document.addEventListener('input',e=>{const el=e.target,k=el&&el.dataset&&el.dataset.ob;if(!k)return;
+  if(k==='afwhy'){const s=V.sess,p=V.af&&V.af.kid;if(s&&p){(s.after[p]||(s.after[p]={})).why=el.value}return}
+  if(k.startsWith('fu.')){if(V.fu){if(!V.fu.ob)V.fu.ob=blankOb();V.fu.ob[k.slice(3)]=el.value}return}
+  const ob=V.sess&&V.sess.obs&&V.sess.obs[V.recKid];if(ob)ob[k]=el.value});
+
+/* map: no progress arc on the big sticker slot (stations still fly in with the ding) */
+function stickerSlot(x,y,i,cur,done,jd){const r=62;
+  return `<g class="slot${cur?' cur':''}"><circle cx="${x}" cy="${y}" r="${r}" fill="#ffffff" fill-opacity=".38"/><circle class="dash" cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="13 10" stroke-linecap="round"/><circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#9c8dce" stroke-opacity=".35" stroke-width="1.6" stroke-dasharray="13 10"/>
+   <path transform="translate(${x} ${y})" d="M0 -16 L4.6 -4.6 L16 0 L4.6 4.6 L0 16 L-4.6 4.6 L-16 0 L-4.6 -4.6 Z" fill="#ffffff" fill-opacity=".85"/>
+   ${jd!=null?`<circle class="absorb" cx="${x}" cy="${y}" r="36" fill="#ffffff"/><g class="burst">${dingSpark(x,y)}</g>`:''}
+   <g transform="translate(${x-52} ${y-52})"><circle r="17" fill="#ffffff" stroke="#c9bdea" stroke-width="3"/><text y="6.5" text-anchor="middle" font-size="18" font-weight="800" fill="#8a7cc0" style="font-family:var(--f-display)">${i+1}</text></g></g>`}
 
 render(false);
 
