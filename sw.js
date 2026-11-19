@@ -1,5 +1,5 @@
 /* オフライン用：アプリ本体・アイコン・フォントをiPadの中に保存する */
-const VERSION = 'tankentai-v2.3-2';
+const VERSION = 'tankentai-v2.3-3';
 const CORE = ['./', './index.html', './manifest.webmanifest', './zh.html', './manifest-zh.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 const FONT_CSS = 'https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=ZCOOL+KuaiLe&display=swap';
 const READY_KEY = './__offline_ready__';
